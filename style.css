@@ -1,0 +1,168 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(244, 222, 109);
+    margin: 0;
+    padding: 0;
+    margin-top: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+
+}
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0);
+    height: 300px;
+    width: 300px;
+    
+
+}
+.circle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: white;
+    border: solid;
+    margin-left: 40;
+    
+    
+    
+}
+.circle::after{
+   width: 270px;
+   height: 270px;
+   border-radius: 50%;
+   position: absolute;
+   border: solid ;
+   z-index: -1;
+   background-color: rgb(228, 189, 18);
+   content: "";
+   box-shadow: -1px 4px 28px 9px rgba(238, 233, 138, 0.75);
+-webkit-box-shadow: -1px 4px 28px 9px rgba(79, 73, 43, 0.75);
+-moz-box-shadow: -1px 4px 28px 9px rgba(0,0,0,0.75);
+}
+.circle::before{
+    width: 228px;
+    height: 228px;
+    border-radius: 50%;
+    position: absolute;
+    
+    border: solid 10px lightgray;
+
+    
+    content: "";
+ }
+/* .circle::after{
+    content: "";
+    width: 5px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    left: 50%;
+    top: 33%;
+    
+    animation: rodarminuto 3s infinite;
+
+} */
+/* .circle::before{
+    content: "";
+    width: 8px;
+    height: 70px;
+    background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    left: 49.8%;
+    top: 40%;
+
+} */
+@keyframes rodarminuto{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.bolinha{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: rodarminuto 5s infinite linear;
+   
+
+}
+.bolinha::after{
+    content: "";
+    width: 5px;
+    height: 120px;
+    background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    left: 49.7%;
+    top: 31.9%;
+    
+    
+}
+.bolinha2{
+    background-color: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    animation: rodarhora 13s infinite linear;
+    position: absolute;
+    
+
+   
+
+}
+
+.bolinha2::before{
+    content: "";
+    width: 10px;
+    height: 90px;
+    background-color: black;
+    position: absolute;
+    border-radius: 5px;
+    top: 31.9%;
+    transform: translateX(5px);
+
+    
+    
+}
+@keyframes rodarhora{
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+.doze{
+    position: relative;
+    top: -36%;
+    left: -45.5%;
+
+}
+.tres{
+    position: relative;
+    
+    left: -13%;
+
+}
+.seis{
+    position: relative;
+    top: 35%;
+    left: -52%;
+
+}
+.nove{
+    position: relative;
+    left: -91%;
+
+}
